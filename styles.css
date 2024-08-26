@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.layout_admin {
+  height: 100vh;
+
+  display: flex;
+}
+
+.sidebar {
+  background-color: #e5e5e5;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_header {
+  margin-bottom: 30px;
+}
+
+.sidebar_content {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar_content img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+  border-radius: 100px;
+}
+
+.sidebar nav {
+  width: 350px;
+  padding-left: 20px;
+}
+
+.sidebar nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav ul a {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  /* border: 1px solid black; */
+  position: relative;
+  color: green;
+  border-radius: 50px 0 0 50px;
+  padding: 20px;
+}
+
+.selected {
+  background-color: white;
+}
+.selected::after {
+  content: "";
+  height: 50px;
+  width: 30px;
+  border-radius: 0 0 50px 0;
+
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  box-shadow: 0 25px 0 0 white;
+
+  transform: translateY(-100%);
+}
+
+.selected::before {
+  content: "";
+  height: 50px;
+  width: 30px;
+  border-radius: 0 50px 0 0;
+
+  /* background-color: red;
+  border: 1px solid black; */
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  box-shadow: 0 -25px 0 0 white;
+
+  transform: translateY(100%);
+}
+
+.sidebar_logout {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main_content {
+  flex: 1;
+
+  padding: 0 50px;
+  padding-top: 50px;
+}
+
+.main_content h1 {
+  margin-bottom: 20px;
+}
+
+.cards_dashboard {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  color: green;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  box-shadow: 0 0 10px #edede9;
+  flex: 1 1 0;
+  height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
