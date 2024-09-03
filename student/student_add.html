@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="layout_admin">
+      <div class="sidebar">
+        <div>
+          <div class="sidebar_header">
+            <p>Help, isKo</p>
+          </div>
+
+          <div class="sidebar_content">
+            <div>
+              <img
+                src="https://scontent.fbag1-2.fna.fbcdn.net/v/t1.15752-9/456197328_2663990113779847_7195666657576319816_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGtilhY5HzqSuG-WCHfXC448mkTGv_HHYfyaRMa_8cdhyw3p1kVqWfBh0pLD6oplBAdLnAhgQ__O6PP07BldOwr&_nc_ohc=YP-o142jCxMQ7kNvgFQ1iUb&_nc_ht=scontent.fbag1-2.fna&oh=03_Q7cD1QHeOwO420L_Gwzh3w-xreSZj2lzg0RlSCBoaFB0g0hufw&oe=66F37392"
+                alt=""
+              />
+            </div>
+            <p>Hannah Laurice De Villena</p>
+          </div>
+          <nav>
+            <ul>
+              <a href="/index.html"
+                ><li><i class="fa-solid fa-chart-line"></i> Dashboard</li></a
+              >
+              <a href="/student/student.html" class="selected"
+                ><li><i class="fa-solid fa-graduation-cap"></i> Student</li></a
+              >
+              <a href="/professor/professor.html"
+                ><li>
+                  <i class="fa-solid fa-chalkboard-user"></i> Professor
+                </li></a
+              >
+              <a href="/announcement/announcement.html"
+                ><li><i class="fa-solid fa-scroll"></i> Announcement</li></a
+              >
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar_logout">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-box-arrow-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"
+            />
+          </svg>
+          <p>Logout</p>
+        </div>
+      </div>
+
+      <div class="main_content">
+        <div class="main_content_nav">
+          <ul>
+            <a href="student.html"><li>Student table</li></a>
+            <a href="student_add.html" class="selected_main"
+              ><li>Add Student</li></a
+            >
+          </ul>
+        </div>
+        <div class="add_form-student">
+          <div class="guide_tab">
+            <div class="guide_tab-content">
+              <div class="guide_tab-register current-tab">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-1-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+                  />
+                </svg>
+
+                <p>Register</p>
+              </div>
+              <div class="hr"><hr /></div>
+              <div class="guide_tab-register">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-2-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"
+                  />
+                </svg>
+                <p>Student Profile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="/student/student_add_profile.html" class="create_account">
+          <p>Register</p>
+          <div class="create_account-layout">
+            <div class="create_account-content">
+              <div class="">
+                <label for="">Name</label>
+                <input type="text" placeholder="Enter name" />
+              </div>
+            </div>
+            <div class="create_account-content">
+              <div>
+                <label for="">Phinmaed Email</label>
+                <input type="text" placeholder="Enter phinmaed email" />
+              </div>
+            </div>
+
+            <div class="create_account-content">
+              <div class="">
+                <label for="">Password</label>
+                <input type="password" placeholder="Password" />
+              </div>
+            </div>
+            <div class="create_account-content">
+              <div>
+                <label for="">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" />
+              </div>
+            </div>
+          </div>
+          <div class="submit-button">
+            <input type="submit" value="Next" />
+          </div>
+        </form>
+        <!-- <form action="">
+          <div class="form_layout">
+            <div class="form_layout-information">
+              <div>
+                <label for="">Student Number</label>
+                <input
+                  type="text"
+                  id="student_number"
+                  placeholder="Student Number"
+                />
+              </div>
+              <div>
+                <label for="">College</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="">Course</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div>
+              <label for="">Department</label>
+              <input type="text" />
+
+              <label for="">Semester</label>
+              <input type="text" />
+
+              <label for="">Learning Modality</label>
+              <input type="text" />
+            </div>
+
+            <div>
+              <label for="">Birthday</label>
+              <input type="text" />
+
+              <label for="">Contact Number</label>
+              <input type="text" />
+            </div>
+          </div>
+        </form> -->
+      </div>
+    </div>
+  </body>
+</html>
