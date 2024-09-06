@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/student.css" />
+    <link rel="stylesheet" href="/css/anouncement.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -35,7 +35,7 @@
               <a href="/index.html"
                 ><li><i class="fa-solid fa-chart-line"></i> Dashboard</li></a
               >
-              <a href="/student/student.html" class="selected"
+              <a href="/student/student.html"
                 ><li><i class="fa-solid fa-graduation-cap"></i> Student</li></a
               >
               <a href="/professor/professor.html"
@@ -43,7 +43,7 @@
                   <i class="fa-solid fa-chalkboard-user"></i> Professor
                 </li></a
               >
-              <a href="/announcement/announcement.html"
+              <a href="/announcement/announcement.html" class="selected"
                 ><li><i class="fa-solid fa-scroll"></i> Announcement</li></a
               >
             </ul>
@@ -74,12 +74,60 @@
       <div class="main_content">
         <div class="main_content_nav">
           <ul>
-            <a href="student.html" class="selected_main"
-              ><li>Student table</li></a
+            <a href="announcement.html"><li>List of Announcement</li></a>
+            <a href="announcement_add.html" class="selected_main"
+              ><li>Add Announcement</li></a
             >
-            <a href="student_add.html"><li>Add Student</li></a>
           </ul>
         </div>
+        <div class="add_form-student">
+          <div class="guide_tab">
+            <div class="guide_tab-content">
+              <div class="guide_tab-register current-tab">
+                <p>Create Announcement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="/announcement/announcement.html" class="create_account">
+          <div class="form-header">
+            <div class="target-selection">
+              <label for="target">Target:</label>
+              <select id="target" name="target">
+                <option value="student">Student</option>
+                <option value="professor">Professor</option>
+              </select>
+            </div>
+            <div class="date-selection">
+              <label for="announcement-date">Date:</label>
+              <input
+                type="date"
+                id="announcement-date"
+                name="announcement-date"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="label_layout" for="announcement">Announcement:</label
+            ><br />
+            <textarea
+              id="announcement"
+              class="announcement"
+              name="announcement"
+              rows="30"
+              cols="100"
+              placeholder="Write your announcement here..."
+            ></textarea
+            ><br /><br />
+            <div class="footer">
+              <p>From: Admin</p>
+            </div>
+            <div class="submit-button">
+              <input type="submit" value="Next" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>

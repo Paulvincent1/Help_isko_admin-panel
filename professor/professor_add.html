@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/student.css" />
+    <link rel="stylesheet" href="/css/prof.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -35,10 +35,10 @@
               <a href="/index.html"
                 ><li><i class="fa-solid fa-chart-line"></i> Dashboard</li></a
               >
-              <a href="/student/student.html" class="selected"
+              <a href="/student/student.html"
                 ><li><i class="fa-solid fa-graduation-cap"></i> Student</li></a
               >
-              <a href="/professor/professor.html"
+              <a href="/professor/professor.html" class="selected"
                 ><li>
                   <i class="fa-solid fa-chalkboard-user"></i> Professor
                 </li></a
@@ -74,9 +74,9 @@
       <div class="main_content">
         <div class="main_content_nav">
           <ul>
-            <a href="student.html"><li>Student table</li></a>
-            <a href="student_add.html" class="selected_main"
-              ><li>Add Student</li></a
+            <a href="professor.html"><li>Professor table</li></a>
+            <a href="professor_add.html" class="selected_main"
+              ><li>Add Professor</li></a
             >
           </ul>
         </div>
@@ -113,13 +113,16 @@
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"
                   />
                 </svg>
-                <p>Student Profile</p>
+                <p>Professor Profile</p>
               </div>
             </div>
           </div>
         </div>
 
-        <form action="/student/student_add_profile.html" class="create_account">
+        <form
+          action="/professor/professor_add_profile.html"
+          class="create_account"
+        >
           <p>Register</p>
           <div class="create_account-layout">
             <div class="create_account-content">
@@ -152,46 +155,6 @@
             <input type="submit" value="Next" />
           </div>
         </form>
-        <!-- <form action="">
-          <div class="form_layout">
-            <div class="form_layout-information">
-              <div>
-                <label for="">Student Number</label>
-                <input
-                  type="text"
-                  id="student_number"
-                  placeholder="Student Number"
-                />
-              </div>
-              <div>
-                <label for="">College</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Course</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div>
-              <label for="">Department</label>
-              <input type="text" />
-
-              <label for="">Semester</label>
-              <input type="text" />
-
-              <label for="">Learning Modality</label>
-              <input type="text" />
-            </div>
-
-            <div>
-              <label for="">Birthday</label>
-              <input type="text" />
-
-              <label for="">Contact Number</label>
-              <input type="text" />
-            </div>
-          </div>
-        </form> -->
       </div>
     </div>
   </body>
